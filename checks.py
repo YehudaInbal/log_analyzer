@@ -5,3 +5,6 @@ def suspicious_ips(data):
 
 def suspicious_ports(data):
     return [list for list in data if list[4] in SENSITIVE_PORT]
+
+def suspicious_size(data):
+    return[list for list in data if int(list[-1]) > LARGE_PACKET]
