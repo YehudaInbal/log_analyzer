@@ -1,0 +1,7 @@
+config.py
+
+
+EXTERNAL_IP = ('192.168', '10.')
+SENSITIVE_PORT = ('23', 'RDP', '3389', 'Telnet', '22', 'SSH')
+LARGE_PACKET =  5000
+NIGHT_ACTIVITY = ('00:00', '06:00')
