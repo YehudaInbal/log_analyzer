@@ -1,4 +1,6 @@
 from config import *
+from checks import *
+
 def tag_packet_sizes(log_data: list[list[str]]) -> list[list[str]]:
     """
         Tags each log entry as 'LARGE' if the size is over 5000 bytes,
@@ -19,3 +21,4 @@ def port_names(log_data: list[list[str]]) -> dict[int, str]:
         Creates a mapping of port numbers to their respective protocols.
     """
     return {int(log[3]): log[4] for log in log_data}
+
